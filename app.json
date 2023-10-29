@@ -1,0 +1,81 @@
+{
+  "name": "تنصيـب السـورس - 𝗧𝗲𝗽𝘁𝗵𝗼𝗻 𝗦𝗲𝘁𝘂𝗽",
+  "description": "• قائمـة تنصيـب سـورس تيبثـون العربـي بشكـل مجانـي - @Tepthon .",
+  "logo": "https://telegra.ph/file/d90dfa4c680c0d0d2e652.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com//Deploy",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "ضـع اسـم حسـابك على التليجـرام [ اسمك ]",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "ضـع الأيبـي أيـدي { Api id }", 
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "ضـع الأيبـي هـاش { Api Hash },",
+      "value": ""
+    },
+    "ENV": {
+      "description": "لا تُغير هذه القيمة",
+      "value": "ANYTHING"
+    },
+    "COMMAND_HAND_LER": {
+      "description": "لا تُغير هذه القيمة",
+      "value": "."
+    },
+    "STRING_SESSION": {
+      "description": "هنـا ضـع كود التيرمكس أو البايروجـرام",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_TOKEN": {
+      "description": "ضـع توكـن بوتـك",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "هنا ضع الايبي كي الخاص بحساب هيروكو من هذا الرابط https://dashboard.heroku.com/account",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اسم التطبيق",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
+      "value": "Asia/Baghdad",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/riganf/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+  },{
+    "url": "heroku/python"
+  }],
+  "stack": "heroku-22"
+}
